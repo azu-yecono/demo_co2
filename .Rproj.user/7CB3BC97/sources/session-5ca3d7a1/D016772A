@@ -3,7 +3,7 @@
     "path": "C:/R_boot/demo_co2/code/script.R",
     "project_path": "code/script.R",
     "type": "r_source",
-    "hash": "3435708241",
+    "hash": "1753184213",
     "contents": "",
     "dirty": false,
     "created": 1691888493614.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "5,28",
-        "scrollLine": "0"
+        "cursorPosition": "14,46",
+        "scrollLine": "5"
     },
     "folds": "",
-    "lastKnownWriteTime": 1691889414,
+    "lastKnownWriteTime": 1691892148,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1691889414269,
+    "last_content_update": 1691892148681,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,15 +1,17 @@
 library(tidyverse)
 
 data <- read.csv("data/owid-co2-data.csv")
-install.packages("tidyverse")
+#install.packages("tidyverse")
 
 data$gdp_per_capita <- data$gdp / data$population
 
 data |> 
   dplyr::filter(
-    year < 2016 & year > 1819)|>
+    year < 2016 & year > 1819 &
+    country == c("United States", "Japan"))|>
   ggplot2::ggplot(
     mapping=aes(x=gdp_per_capita,
-                y=co2_per_capita))+
+                y=co2_per_capita),  
+    group = rep(c("Japan", "United States")))+
   geom_line()
 plot
