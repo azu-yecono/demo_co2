@@ -11,7 +11,8 @@ data |>
     country == c("United States", "Japan"))|>
   ggplot2::ggplot(
     mapping=aes(x=gdp_per_capita,
-                y=co2_per_capita),  
-    group = rep(c("Japan", "United States")))+
-  geom_line()
+                y=co2_per_capita,
+                color = factor(country)),
+    group_by(country))+
+  geom_point()
 plot
